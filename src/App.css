@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.container{
+  width: 100%;
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchAria{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 2px 2px 2px grey;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5px;
+  align-items: center;
+  width: 70%;
+}
+.search-field{
+  width: 30%;
+  height: 80%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.search-field:focus {
+  width: 100%;
+}
+.searchRate{
+  width: 30%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
 }
-
-.App-link {
-  color: #61dafb;
+.rateLevel{
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rating{
+  font-size: 1.5rem;
+}
+.movies{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+.moviesitems, .newMovie{
+  width: 25%;
+  height: 75vh;
+  margin: 5px;
+}
+.movieitem{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 0.01rem solid gray;
+  position: relative;
+}
+.newMovie{
+  text-align: center;
+  font-size: 70px;
+  background-color: transparent;
+  border: 0.01rem solid gray;
+}
+.moviePic{
+  width: 100%;
+  height: 70%;
+}
+.starsRate{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.rate{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: grey;
+  opacity: 0.7;
+}
+.description{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.title{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.movieDescription{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+.addnewmovie{
+  display: flex;
+  flex-direction: column;
+}
+.remove-aria{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.btnremove{
+  width: 10vw;
+  height: 6vh;
+  text-align: center;
+  font-size:1rem;
+  font-weight: bold;
+  background-color:#D19275;
+  border:none;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.btnremove:hover, .btnremove:focus, .btnremove:active{
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
